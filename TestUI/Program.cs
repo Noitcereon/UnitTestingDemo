@@ -1,5 +1,6 @@
 ﻿using System;
 using StudentLib;
+using StudentLib.Interfaces;
 
 namespace TestUI
 {
@@ -7,7 +8,7 @@ namespace TestUI
     {
         static void Main(string[] args)
         {
-            Student student = new Student("Thomas", "Hedeboparken 4");
+            IPerson student = new Student("Thomas", "Hedeboparken 4", GenderType.Male);
             Console.WriteLine(student);
 
             Console.ReadKey();
