@@ -18,6 +18,7 @@ namespace StudentLib
             get => _salary;
             set
             {
+                if (value < 0) { throw new ArgumentOutOfRangeException(); }
                 _salary = value;
             } 
         }
